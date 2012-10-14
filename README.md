@@ -6,7 +6,27 @@ from the bracket completion plugin that is provided by the
 
 To install the plugin simply copy `latex-brackets.plugin` and
 `latex-brackets.py` to the `~/.local/share/gedit/plugins` directory (GNOME 3)
-and then enable it in gedit's _Preferences_.
+and then enable it in gedit's _Preferences_. The supported opening brackets are
+
+* `{`,
+* `` ` ``,
+* `$`,
+* `\(`,
+* `\[`
+
+and all sizes (`\bigl`, `\Bigl`, `\biggl`, `\Biggl` and `\left`) of
+
+* `(`
+* `[`,
+* `\\{`,
+* `\langle`,
+* `\lbrace`,
+* `\lmoustache`,
+* `\lceil`,
+* `\lgroup`,
+* `\floor`,
+* `\vert`,
+* `\Vert`.
 
 [1]: https://github.com/dwilding/latex-brackets
 [2]: http://projects.gnome.org/gedit/
