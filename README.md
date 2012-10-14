@@ -21,10 +21,10 @@ and all sizes (`\bigl`, `\Bigl`, `\biggl`, `\Biggl` and `\left`) of
 * `\{`,
 * `\langle`,
 * `\lbrace`,
-* `\lmoustache`,
 * `\lceil`,
-* `\lgroup`,
 * `\lfloor`,
+* `\lgroup`,
+* `\lmoustache`,
 * `\lvert`,
 * `\lVert`.
 
