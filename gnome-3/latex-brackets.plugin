@@ -1,0 +1,10 @@
+[Plugin]
+Loader=python
+Module=latex-brackets
+IAge=3
+Name=LaTeX Brackets
+Description=Automatically completes common LaTeX brackets.
+Authors=Dave Wilding
+Copyright=Copyright (c) 2012 Dave Wilding
+Website=https://github.com/dwilding/latex-brackets
+Version=3.0
