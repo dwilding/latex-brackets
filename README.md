@@ -24,11 +24,14 @@ and all sizes (`\bigl`, `\Bigl`, `\biggl`, `\Biggl` and `\left`) of
 * `\lmoustache`,
 * `\lceil`,
 * `\lgroup`,
-* `\floor`,
-* `\vert`,
-* `\Vert`.
+* `\lfloor`,
+* `\lvert`,
+* `\lVert`.
+
+Some of these brackets are provided by the [**`amsmath`**][5] package.
 
 [1]: https://github.com/dwilding/latex-brackets
 [2]: http://projects.gnome.org/gedit/
 [3]: http://www.latex-project.org/
 [4]: https://live.gnome.org/GeditPlugins
+[5]: http://www.ctan.org/pkg/amsmath
