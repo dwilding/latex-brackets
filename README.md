@@ -28,7 +28,12 @@ and all sizes (`\bigl`, `\Bigl`, `\biggl`, `\Biggl` and `\left`) of
 * `\lvert`,
 * `\lVert`.
 
-Some of these brackets are provided by the [**`amsmath`**][5] package.
+Some of these brackets require the [**`amsmath`**][5] package.
+
+LaTeX Brackets also provides some convenient keyboard features. If the cursor is
+between a pair of opening and closing brackets then the backspace key removes
+the whole pair, and if the cursor is directly before a closing bracket then the
+delete and tab keys remove and, respectively, move the cursor over the bracket.
 
 [1]: https://github.com/dwilding/latex-brackets
 [2]: http://projects.gnome.org/gedit/
