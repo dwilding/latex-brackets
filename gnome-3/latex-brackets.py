@@ -91,7 +91,7 @@ class LatexBracketsPlugin(GObject.Object, Gedit.ViewActivatable):
 			self.view.disconnect(self.press_handler)
 
 	def event_after(self, view, event):
-		ignore =  Gdk.ModifierType.CONTROL_MASK | Gdk.ModifierType.MOD1_MASK
+		ignore = Gdk.ModifierType.CONTROL_MASK | Gdk.ModifierType.MOD1_MASK
 
 		if (event.type != Gdk.EventType.KEY_PRESS or
 		    event.state & ignore or
