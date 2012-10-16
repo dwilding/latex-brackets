@@ -1,0 +1,10 @@
+[Gedit Plugin]
+Loader=python
+Module=latex-brackets
+IAge=2
+Name=LaTeX Brackets
+Description=Automatically completes common LaTeX brackets.
+Authors=Dave Wilding
+Copyright=Copyright (c) 2012 Dave Wilding
+Website=https://github.com/dwilding/latex-brackets
+Version=2.0
