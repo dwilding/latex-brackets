@@ -5,8 +5,8 @@ from the bracket completion plugin that is provided by the
 [**`gedit-plugins`**][4] package.
 
 To install the plugin in GNOME 2 copy `latex-brackets.gedit-plugin` and
-`latex-brackets.py` and to the `~/.gnome2/gedit/plugins` directory. To install
-it in GNOME 3 copy `latex-brackets.plugin` and `latex-brackets.py` to the
+`latex-brackets.py` to the `~/.gnome2/gedit/plugins` directory. To install it in
+GNOME 3 copy `latex-brackets.plugin` and `latex-brackets.py` to the
 `~/.local/share/gedit/plugins` directory. The plugin can then be enabled in
 gedit's _Preferences_.
 
