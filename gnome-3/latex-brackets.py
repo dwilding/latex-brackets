@@ -113,12 +113,13 @@ class LatexBracketsPlugin(GObject.Object, Gedit.ViewActivatable):
 		          Gdk.ModifierType.MOD1_MASK |
 		          Gdk.ModifierType.SHIFT_MASK)
 
-		if event.state & ignore:
+		if event.state & ignore or self.text.get_selection_bounds():
 			return
+
+		insert = self.get_insert()
 
 		# Deal with the backspace key.
 		if event.keyval == Gdk.KEY_BackSpace:
-			insert = self.get_insert()
 			bounds = self.look_both(insert)
 
 			if bounds:
@@ -129,7 +130,6 @@ class LatexBracketsPlugin(GObject.Object, Gedit.ViewActivatable):
 
 		# Deal with the delete key(s).
 		elif event.keyval in (Gdk.KEY_Delete, Gdk.KEY_KP_Delete):
-			insert = self.get_insert()
 			end = self.look_forward(insert)
 
 			if end:
@@ -140,7 +140,6 @@ class LatexBracketsPlugin(GObject.Object, Gedit.ViewActivatable):
 
 		# Deal with the tab key(s).
 		elif event.keyval in (Gdk.KEY_Tab, Gdk.KEY_KP_Tab):
-			insert = self.get_insert()
 			line = self.get_line(insert)
 
 			# The tab key should function normally at the beginning of a line.

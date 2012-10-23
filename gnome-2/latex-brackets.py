@@ -107,12 +107,13 @@ class LatexBracketsWorker(object):
 	def event_press(self, view, event):
 		ignore = gdk.CONTROL_MASK | gdk.MOD1_MASK | gdk.SHIFT_MASK
 
-		if event.state & ignore:
+		if event.state & ignore or self.text.get_selection_bounds():
 			return
+
+		insert = self.get_insert()
 
 		# Deal with the backspace key.
 		if event.keyval == gtk.keysyms.BackSpace:
-			insert = self.get_insert()
 			bounds = self.look_both(insert)
 
 			if bounds:
@@ -123,7 +124,6 @@ class LatexBracketsWorker(object):
 
 		# Deal with the delete key(s).
 		elif event.keyval in (gtk.keysyms.Delete, gtk.keysyms.KP_Delete):
-			insert = self.get_insert()
 			end = self.look_forward(insert)
 
 			if end:
@@ -134,7 +134,6 @@ class LatexBracketsWorker(object):
 
 		# Deal with the tab key(s).
 		elif event.keyval in (gtk.keysyms.Tab, gtk.keysyms.KP_Tab):
-			insert = self.get_insert()
 			line = self.get_line(insert)
 
 			# The tab key should function normally at the beginning of a line.
