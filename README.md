@@ -41,8 +41,8 @@ delete key removes the bracket and the tab key moves the cursor past the
 bracket.
 
 [1]: https://github.com/dwilding/latex-brackets
-[2]: http://projects.gnome.org/gedit/
+[2]: https://wiki.gnome.org/Apps/Gedit
 [3]: http://www.latex-project.org/
-[4]: https://live.gnome.org/GeditPlugins
+[4]: https://wiki.gnome.org/Apps/Gedit/ShippedPlugins
 [5]: http://www.gnome.org/
 [6]: http://www.ctan.org/pkg/amsmath

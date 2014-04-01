@@ -1,7 +1,7 @@
 # This is latex-brackets.py, a bracket completion plugin for the gedit text
 # editor. See <https://github.com/dwilding/latex-brackets>.
 #
-# Copyright (c) 2013 Dave Wilding
+# Copyright (c) 2014 Dave Wilding
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal

@@ -5,6 +5,6 @@ IAge=3
 Name=LaTeX Brackets
 Description=Automatically completes common LaTeX brackets.
 Authors=Dave Wilding
-Copyright=Copyright (c) 2013 Dave Wilding
+Copyright=Copyright (c) 2014 Dave Wilding
 Website=https://github.com/dwilding/latex-brackets
 Version=3.0
