@@ -95,11 +95,11 @@ class LatexBracketsPlugin(GObject.Object, Gedit.ViewActivatable):
 
 		if (event.type != Gdk.EventType.KEY_PRESS or
 		    event.state & ignore or
-		    event.keyval not in brackets):
+		    event.key.keyval not in brackets):
 			return
 
 		insert = self.get_insert()
-		closing = self.look_backward(insert, event.keyval)
+		closing = self.look_backward(insert, event.key.keyval)
 
 		if closing:
 			self.text.begin_user_action()
@@ -119,7 +119,7 @@ class LatexBracketsPlugin(GObject.Object, Gedit.ViewActivatable):
 		insert = self.get_insert()
 
 		# Deal with the backspace key.
-		if event.keyval == Gdk.KEY_BackSpace:
+		if event.key.keyval == Gdk.KEY_BackSpace:
 			bounds = self.look_both(insert)
 
 			if bounds:
@@ -129,7 +129,7 @@ class LatexBracketsPlugin(GObject.Object, Gedit.ViewActivatable):
 				return True
 
 		# Deal with the delete key(s).
-		elif event.keyval in (Gdk.KEY_Delete, Gdk.KEY_KP_Delete):
+		elif event.key.keyval in (Gdk.KEY_Delete, Gdk.KEY_KP_Delete):
 			end = self.look_forward(insert)
 
 			if end:
@@ -139,7 +139,7 @@ class LatexBracketsPlugin(GObject.Object, Gedit.ViewActivatable):
 				return True
 
 		# Deal with the tab key(s).
-		elif event.keyval in (Gdk.KEY_Tab, Gdk.KEY_KP_Tab):
+		elif event.key.keyval in (Gdk.KEY_Tab, Gdk.KEY_KP_Tab):
 			line = self.get_line(insert)
 
 			# The tab key should function normally at the beginning of a line.
